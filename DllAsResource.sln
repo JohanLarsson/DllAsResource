@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DllAsResource", "DllAsResource\DllAsResource.csproj", "{6E6DCBCB-6746-4743-969B-B3D82A1238AB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E6DCBCB-6746-4743-969B-B3D82A1238AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E6DCBCB-6746-4743-969B-B3D82A1238AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E6DCBCB-6746-4743-969B-B3D82A1238AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E6DCBCB-6746-4743-969B-B3D82A1238AB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DB210BEC-5464-4744-B102-332FE851FB91}
+	EndGlobalSection
+EndGlobal
