@@ -7,10 +7,8 @@
     {
         public MainWindow()
         {
-            var dto = new Dto(1);
-            var json = JsonConvert.SerializeObject(dto);
-            var roundtripped = JsonConvert.DeserializeObject<Dto>(json);
             this.InitializeComponent();
+            TextBlock.Text = JsonConvert.SerializeObject(new Dto(1));
         }
     }
 }
