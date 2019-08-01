@@ -12,19 +12,23 @@
             {
                 if (args.Name.StartsWith("Newtonsoft.Json"))
                 {
-                    using (var stream = Assembly.GetExecutingAssembly()
-                                                .GetManifestResourceStream("DllAsResource.Lib.Newtonsoft.Json.dll"))
-                    {
-                        var ba = new byte[(int)stream.Length];
-                        stream.Read(ba, 0, (int)stream.Length);
-                        return Assembly.Load(ba);
-                    }
+                    return Assembly.Load(GetBytes("DllAsResource.Lib.Newtonsoft.Json.dll"));
                 }
 
                 return null;
             };
 
             base.OnStartup(e);
+        }
+
+        private static byte[] GetBytes(string name)
+        {
+            using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(name))
+            {
+                var bytes = new byte[stream.Length];
+                stream.Read(bytes, 0, bytes.Length);
+                return bytes;
+            }
         }
     }
 }
